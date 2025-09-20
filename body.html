@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Blog | A Clean Template</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Use the Inter font family */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm sticky top-0 z-10">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Blog Title -->
+            <a href="#" class="text-2xl font-bold text-gray-900">My Awesome Blog</a>
+            
+            <!-- Navigation Menu -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors duration-200">Home</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors duration-200">About</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors duration-200">Categories</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors duration-200">Contact</a>
+            </nav>
+            
+            <!-- Mobile Menu Button (Optional) -->
+            <button class="md:hidden text-gray-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        <div class="flex flex-col md:flex-row gap-12">
+
+            <!-- Blog Posts Section -->
+            <section class="w-full md:w-2/3">
+                
+                <!-- Blog Post 1 -->
+                <article class="bg-white p-6 rounded-lg shadow-md mb-8">
+                    <h2 class="text-3xl font-bold mb-2 text-gray-900">
+                        <a href="#" class="hover:text-blue-600 transition-colors duration-200">My First Journey into Web Development</a>
+                    </h2>
+                    <div class="text-sm text-gray-500 mb-4">
+                        <span>By John Doe</span> &middot;
+                        <span>September 20, 2025</span> &middot;
+                        <a href="#" class="text-blue-500 hover:underline">Web Dev</a>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        This is the beginning of my journey into the vast world of web development. Today, I'm starting with the basics: HTML and CSS. It's exciting to think about all the amazing websites and applications I'll be able to build...
+                    </p>
+                    <a href="#" class="inline-block mt-4 text-blue-600 font-semibold hover:underline">Read More &rarr;</a>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="bg-white p-6 rounded-lg shadow-md mb-8">
+                    <h2 class="text-3xl font-bold mb-2 text-gray-900">
+                        <a href="#" class="hover:text-blue-600 transition-colors duration-200">10 Tips for a Productive Morning</a>
+                    </h2>
+                    <div class="text-sm text-gray-500 mb-4">
+                        <span>By John Doe</span> &middot;
+                        <span>September 15, 2025</span> &middot;
+                        <a href="#" class="text-blue-500 hover:underline">Productivity</a>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        Waking up early and having a structured morning routine can set the tone for the entire day. Here are ten tips that have personally helped me stay focused, energized, and ready to tackle any challenge that comes my way...
+                    </p>
+                    <a href="#" class="inline-block mt-4 text-blue-600 font-semibold hover:underline">Read More &rarr;</a>
+                </article>
+
+                <!-- Pagination -->
+                <div class="flex justify-between items-center mt-12">
+                    <a href="#" class="bg-white px-4 py-2 rounded-lg shadow-md hover:bg-gray-100 transition-colors duration-200">&larr; Older Posts</a>
+                    <a href="#" class="bg-white px-4 py-2 rounded-lg shadow-md hover:bg-gray-100 transition-colors duration-200">Newer Posts &rarr;</a>
+                </div>
+
+            </section>
+
+            <!-- Sidebar -->
+            <aside class="w-full md:w-1/3">
+                
+                <!-- About Me Widget -->
+                <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                    <h3 class="text-xl font-bold mb-4">About Me</h3>
+                    <p class="text-gray-600">
+                        Welcome to my blog! I'm a passionate writer and developer, sharing my thoughts on technology, productivity, and life.
+                    </p>
+                </div>
+                
+                <!-- Categories Widget -->
+                <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                    <h3 class="text-xl font-bold mb-4">Categories</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-blue-600 hover:underline">Web Development</a></li>
+                        <li><a href="#" class="text-blue-600 hover:underline">Productivity</a></li>
+                        <li><a href="#" class="text-blue-600 hover:underline">Travel</a></li>
+                        <li><a href="#" class="text-blue-600 hover:underline">Book Reviews</a></li>
+                    </ul>
+                </div>
+
+                <!-- Recent Posts Widget -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Recent Posts</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="hover:text-blue-600 transition-colors duration-200">My First Journey into Web Development</a></li>
+                        <li><a href="#" class="hover:text-blue-600 transition-colors duration-200">10 Tips for a Productive Morning</a></li>
+                    </ul>
+                </div>
+                
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-white mt-12 py-6 border-t">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <p>&copy; 2025 My Awesome Blog. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
